@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #133824;
+    --color-primary-hover: #1B4D31;
+    --color-primary-light: rgba(19, 56, 36, 0.08);
+    --color-accent: #D4A017;
+    --color-accent-hover: #B8860B;
+    --color-accent-light: rgba(212, 160, 23, 0.15);
+    --color-canvas: #fafbf9;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Public Sans', sans-serif;
+    --radius-theme: 0.75rem;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #1a2e22;
+    background-color: var(--color-canvas);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom interactive utility styles */
+.text-balance {
+  text-wrap: balance;
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Editable highlight halo when in live edit mode */
+.editable-highlight {
+  position: relative;
+  transition: all 0.2s ease;
+}
+.editable-highlight:hover {
+  outline: 2px dashed #D4A017;
+  outline-offset: 4px;
+  cursor: pointer;
+}

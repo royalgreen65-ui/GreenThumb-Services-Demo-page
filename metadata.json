@@ -1,0 +1,8 @@
+{
+  "name": "GreenThumb Services - Lawn Care & Landscaping",
+  "description": "Professional residential and commercial lawn care, precision mowing, landscape design, and seasonal cleanups with fast free quotes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
